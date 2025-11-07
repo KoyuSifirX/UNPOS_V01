@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Arda\\projeler\\unpos\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{534CEC53-1EBC-4386-95E3-0E451FCB388A}|Samba.Modules.LoginModule\\Samba.Modules.LoginModule.csproj|d:\\arda\\projeler\\unpos\\samba.modules.loginmodule\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{534CEC53-1EBC-4386-95E3-0E451FCB388A}|Samba.Modules.LoginModule\\Samba.Modules.LoginModule.csproj|solutionrelative:samba.modules.loginmodule\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B58CBF09-52EA-4466-B5D2-2664018E7561}|Samba.Presentation\\Samba.Presentation.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.presentation\\shell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B58CBF09-52EA-4466-B5D2-2664018E7561}|Samba.Presentation\\Samba.Presentation.csproj|solutionrelative:samba.presentation\\shell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534CEC53-1EBC-4386-95E3-0E451FCB388A}|Samba.Modules.LoginModule\\Samba.Modules.LoginModule.csproj|d:\\arda\\projeler\\unpos\\samba.modules.loginmodule\\loginmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{534CEC53-1EBC-4386-95E3-0E451FCB388A}|Samba.Modules.LoginModule\\Samba.Modules.LoginModule.csproj|solutionrelative:samba.modules.loginmodule\\loginmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B184E8F8-A507-4C3D-B580-184E3776A95C}|Samba.Infrastructure\\Samba.Infrastructure.csproj|d:\\arda\\projeler\\unpos\\samba.infrastructure\\settings\\localsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B184E8F8-A507-4C3D-B580-184E3776A95C}|Samba.Infrastructure\\Samba.Infrastructure.csproj|solutionrelative:samba.infrastructure\\settings\\localsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B58CBF09-52EA-4466-B5D2-2664018E7561}|Samba.Presentation\\Samba.Presentation.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.presentation\\workperiodstatusview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B58CBF09-52EA-4466-B5D2-2664018E7561}|Samba.Presentation\\Samba.Presentation.csproj|solutionrelative:samba.presentation\\workperiodstatusview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,47 +22,27 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LocalSettings.cs",
-              "DocumentMoniker": "D:\\Arda\\projeler\\unpos\\Samba.Infrastructure\\Settings\\LocalSettings.cs",
-              "RelativeDocumentMoniker": "Samba.Infrastructure\\Settings\\LocalSettings.cs",
-              "ToolTip": "D:\\Arda\\projeler\\unpos\\Samba.Infrastructure\\Settings\\LocalSettings.cs",
-              "RelativeToolTip": "Samba.Infrastructure\\Settings\\LocalSettings.cs",
-              "ViewState": "AgIAAFMBAAAAAAAAAAAAAEoBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T07:41:20.465Z",
-              "IsPinned": true,
+              "DocumentIndex": 1,
+              "Title": "WorkPeriodStatusView.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Presentation\\WorkPeriodStatusView.xaml",
+              "RelativeDocumentMoniker": "Samba.Presentation\\WorkPeriodStatusView.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Presentation\\WorkPeriodStatusView.xaml",
+              "RelativeToolTip": "Samba.Presentation\\WorkPeriodStatusView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-07T10:04:42.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\Arda\\projeler\\unpos\\Samba.Modules.LoginModule\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "Samba.Modules.LoginModule\\LoginViewModel.cs",
-              "ToolTip": "D:\\Arda\\projeler\\unpos\\Samba.Modules.LoginModule\\LoginViewModel.cs",
-              "RelativeToolTip": "Samba.Modules.LoginModule\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T08:59:35.718Z",
+              "Title": "Shell.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Presentation\\Shell.xaml",
+              "RelativeDocumentMoniker": "Samba.Presentation\\Shell.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Presentation\\Shell.xaml",
+              "RelativeToolTip": "Samba.Presentation\\Shell.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-07T10:04:34.112Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginModule.cs",
-              "DocumentMoniker": "D:\\Arda\\projeler\\unpos\\Samba.Modules.LoginModule\\LoginModule.cs",
-              "RelativeDocumentMoniker": "Samba.Modules.LoginModule\\LoginModule.cs",
-              "ToolTip": "D:\\Arda\\projeler\\unpos\\Samba.Modules.LoginModule\\LoginModule.cs",
-              "RelativeToolTip": "Samba.Modules.LoginModule\\LoginModule.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T08:59:30.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }
