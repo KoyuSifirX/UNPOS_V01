@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B58CBF09-52EA-4466-B5D2-2664018E7561}|Samba.Presentation\\Samba.Presentation.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.presentation\\shell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B58CBF09-52EA-4466-B5D2-2664018E7561}|Samba.Presentation\\Samba.Presentation.csproj|solutionrelative:samba.presentation\\shell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B58CBF09-52EA-4466-B5D2-2664018E7561}|Samba.Presentation\\Samba.Presentation.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.presentation\\workperiodstatusview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B58CBF09-52EA-4466-B5D2-2664018E7561}|Samba.Presentation\\Samba.Presentation.csproj|solutionrelative:samba.presentation\\workperiodstatusview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B75C6387-9855-44BF-886E-5BB60D643AD2}|Samba.Modules.PosModule\\Samba.Modules.PosModule.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.modules.posmodule\\posmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B75C6387-9855-44BF-886E-5BB60D643AD2}|Samba.Modules.PosModule\\Samba.Modules.PosModule.csproj|solutionrelative:samba.modules.posmodule\\posmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WorkPeriodStatusView.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Presentation\\WorkPeriodStatusView.xaml",
-              "RelativeDocumentMoniker": "Samba.Presentation\\WorkPeriodStatusView.xaml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Presentation\\WorkPeriodStatusView.xaml",
-              "RelativeToolTip": "Samba.Presentation\\WorkPeriodStatusView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-07T10:04:42.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Shell.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Presentation\\Shell.xaml",
-              "RelativeDocumentMoniker": "Samba.Presentation\\Shell.xaml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Presentation\\Shell.xaml",
-              "RelativeToolTip": "Samba.Presentation\\Shell.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-07T10:04:34.112Z",
+              "Title": "PosModule.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PosModule\\PosModule.cs",
+              "RelativeDocumentMoniker": "Samba.Modules.PosModule\\PosModule.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PosModule\\PosModule.cs",
+              "RelativeToolTip": "Samba.Modules.PosModule\\PosModule.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwDsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T13:30:30.324Z",
               "EditorCaption": ""
             }
           ]
