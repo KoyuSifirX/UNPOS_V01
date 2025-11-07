@@ -3,4 +3,4 @@
 More Information
 http://emreeren.github.com/SambaPOS-3/
 
-Visit www.sambapos.com for stable releases.
+Visit www.sambapos.com for stable releases."# unpos-restorant" 

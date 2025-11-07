@@ -217,7 +217,7 @@ html
         public static string CurrencySymbol { get { return CultureInfo.CurrentCulture.NumberFormat.CurrencySymbol; } }
 
         private static int DefaultDbVersion { get { return 24; } }
-        private static string DefaultAppVersion { get { return "3.0.35 BETA"; } }
+        private static string DefaultAppVersion { get { return "0.0.01"; } }
 
         public static int DbVersion { get { return CanReadVersionFromFile() ? Convert.ToInt32(GetVersionDat("DbVersion")) : DefaultDbVersion; } }
         public static string AppVersion { get { return CanReadVersionFromFile() ? GetVersionDat("AppVersion") : DefaultAppVersion; } }
@@ -239,7 +239,7 @@ html
             }
         }
 
-        public static string AppName { get { return "SambaPOS3"; } }
+        public static string AppName { get { return "UnposV1"; } }
 
         private static IList<string> _supportedLanguages;
         public static IList<string> SupportedLanguages { get { return _supportedLanguages ?? (_supportedLanguages = new[] { "en", "tr", "it", "pt-BR", "hr", "ar", "hu", "es", "id", "el", "zh-CN", "de", "sq", "cs", "nl", "he", "fr", "ru-RU", "da", "fa", "tk-TM" }); } }

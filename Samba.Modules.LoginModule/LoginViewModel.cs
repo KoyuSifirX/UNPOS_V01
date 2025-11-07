@@ -23,16 +23,16 @@ namespace Samba.Modules.LoginModule
             {
                 if (File.Exists(LocalSettings.LogoPath))
                     return LocalSettings.LogoPath;
-                if (File.Exists(LocalSettings.DocumentPath + "\\Images\\logo.png"))
-                    return LocalSettings.DocumentPath + "\\Images\\logo.png";
-                if (File.Exists(LocalSettings.AppPath + "\\Images\\logo.png"))
-                    return LocalSettings.AppPath + "\\Images\\logo.png";
+                if (File.Exists(LocalSettings.DocumentPath + "\\Images\\unpos-bilisim.png"))
+                    return LocalSettings.DocumentPath + "\\Images\\unpos-bilisim.png";
+                if (File.Exists(LocalSettings.AppPath + "\\Images\\unpos-bilisim.png"))
+                    return LocalSettings.AppPath + "\\Images\\unpos-bilisim.png";
                 return LocalSettings.AppPath + "\\Images\\empty.png";
             }
             set { LocalSettings.LogoPath = value; }
         }
 
-        public string AppLabel { get { return "SAMBA POS " + LocalSettings.AppVersion + " - " + GetDatabaseLabel(); } }
+        public string AppLabel { get { return "Ünpos " + LocalSettings.AppVersion + " - " + GetDatabaseLabel(); } }
         public string AdminPasswordHint { get { return GetAdminPasswordHint(); } }
         public string SqlHint { get { return GetSqlHint(); } }
 
