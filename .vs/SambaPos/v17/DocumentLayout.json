@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B75C6387-9855-44BF-886E-5BB60D643AD2}|Samba.Modules.PosModule\\Samba.Modules.PosModule.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.modules.posmodule\\posmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B75C6387-9855-44BF-886E-5BB60D643AD2}|Samba.Modules.PosModule\\Samba.Modules.PosModule.csproj|solutionrelative:samba.modules.posmodule\\posmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{413B698C-0D7D-4FCD-9F16-AF51AED4E647}|Samba.Services\\Samba.Services.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.services\\implementations\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{413B698C-0D7D-4FCD-9F16-AF51AED4E647}|Samba.Services\\Samba.Services.csproj|solutionrelative:samba.services\\implementations\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B184E8F8-A507-4C3D-B580-184E3776A95C}|Samba.Infrastructure\\Samba.Infrastructure.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.infrastructure\\exceptionreporter\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B184E8F8-A507-4C3D-B580-184E3776A95C}|Samba.Infrastructure\\Samba.Infrastructure.csproj|solutionrelative:samba.infrastructure\\exceptionreporter\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CDFA1B2-F3A3-45E1-919B-9D1BCA26984B}|Lib\\FluentScript\\FluentScript.csproj|c:\\users\\admin\\desktop\\unpos_v01\\lib\\fluentscript\\plugins\\parser\\ioplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CDFA1B2-F3A3-45E1-919B-9D1BCA26984B}|Lib\\FluentScript\\FluentScript.csproj|solutionrelative:lib\\fluentscript\\plugins\\parser\\ioplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PosModule.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PosModule\\PosModule.cs",
-              "RelativeDocumentMoniker": "Samba.Modules.PosModule\\PosModule.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PosModule\\PosModule.cs",
-              "RelativeToolTip": "Samba.Modules.PosModule\\PosModule.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAwDsAAAAJAAAAAAAAAA==",
+              "Title": "LogService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Services\\Implementations\\LogService.cs",
+              "RelativeDocumentMoniker": "Samba.Services\\Implementations\\LogService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Services\\Implementations\\LogService.cs",
+              "RelativeToolTip": "Samba.Services\\Implementations\\LogService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwBwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T13:30:30.324Z",
+              "WhenOpened": "2025-11-08T14:23:36.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Infrastructure\\ExceptionReporter\\Logger.cs",
+              "RelativeDocumentMoniker": "Samba.Infrastructure\\ExceptionReporter\\Logger.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Infrastructure\\ExceptionReporter\\Logger.cs",
+              "RelativeToolTip": "Samba.Infrastructure\\ExceptionReporter\\Logger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T14:22:55.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IOPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Lib\\FluentScript\\Plugins\\Parser\\IOPlugin.cs",
+              "RelativeDocumentMoniker": "Lib\\FluentScript\\Plugins\\Parser\\IOPlugin.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Lib\\FluentScript\\Plugins\\Parser\\IOPlugin.cs",
+              "RelativeToolTip": "Lib\\FluentScript\\Plugins\\Parser\\IOPlugin.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwCgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T14:22:51.669Z",
               "EditorCaption": ""
             }
           ]

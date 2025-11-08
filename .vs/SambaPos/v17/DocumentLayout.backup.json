@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B75C6387-9855-44BF-886E-5BB60D643AD2}|Samba.Modules.PosModule\\Samba.Modules.PosModule.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.modules.posmodule\\posmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B75C6387-9855-44BF-886E-5BB60D643AD2}|Samba.Modules.PosModule\\Samba.Modules.PosModule.csproj|solutionrelative:samba.modules.posmodule\\posmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B58CBF09-52EA-4466-B5D2-2664018E7561}|Samba.Presentation\\Samba.Presentation.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.presentation\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B58CBF09-52EA-4466-B5D2-2664018E7561}|Samba.Presentation\\Samba.Presentation.csproj|solutionrelative:samba.presentation\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67EBDE4C-87F7-406D-8379-074A0E21ED7F}|Samba.ApiServer\\Samba.ApiServer.csproj|C:\\Users\\Admin\\Desktop\\UNPOS_V01\\samba.apiserver\\mefbootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67EBDE4C-87F7-406D-8379-074A0E21ED7F}|Samba.ApiServer\\Samba.ApiServer.csproj|solutionrelative:samba.apiserver\\mefbootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PosModule.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PosModule\\PosModule.cs",
-              "RelativeDocumentMoniker": "Samba.Modules.PosModule\\PosModule.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PosModule\\PosModule.cs",
-              "RelativeToolTip": "Samba.Modules.PosModule\\PosModule.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAwDsAAAAJAAAAAAAAAA==",
+              "Title": "Bootstrapper.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Presentation\\Bootstrapper.cs",
+              "RelativeDocumentMoniker": "Samba.Presentation\\Bootstrapper.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Presentation\\Bootstrapper.cs",
+              "RelativeToolTip": "Samba.Presentation\\Bootstrapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T13:30:30.324Z",
+              "WhenOpened": "2025-11-08T13:18:40.817Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MefBootstrapper.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.ApiServer\\MefBootstrapper.cs",
+              "RelativeDocumentMoniker": "Samba.ApiServer\\MefBootstrapper.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.ApiServer\\MefBootstrapper.cs",
+              "RelativeToolTip": "Samba.ApiServer\\MefBootstrapper.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T13:18:18.224Z"
             }
           ]
         }
