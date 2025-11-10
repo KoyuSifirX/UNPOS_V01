@@ -920,7 +920,7 @@ Mesaj:
     <value>Sipariş Etiketi Grubu</value>
   </data>
   <data name="FastPay" xml:space="preserve">
-    <value>FastPay</value>
+    <value>Hızlı Satış</value>
   </data>
   <data name="DateRangeIsNotActiveWorkPeriod" xml:space="preserve">
     <value>Tarih aralığı aktif çalışma dönemi değil.</value>
@@ -2399,7 +2399,7 @@ Hata Mesajı:
     <value>Ödenmedi</value>
   </data>
   <data name="FastPay" xml:space="preserve">
-    <value>FastPay</value>
+    <value>Hızlı Satış</value>
   </data>
   <data name="TotalTaxableAmount" xml:space="preserve">
     <value>Toplam Vergiye tabi Tutar</value>
