@@ -102,7 +102,9 @@
     <PostBuildEvent>IF NOT "$(ConfigurationName)"=="Release" GOTO End
 
 copy "$(TargetDir)$(TargetFileName)" "$(SolutionDir)SambaSetup\src"
-copy "$(TargetPath)" "$(SolutionDir)Samba.Presentation\bin\$(ConfigurationName)\"
+if not exist "$(SolutionDir)Samba.Presentation\bin\$(ConfigurationName)\" mkdir "$(SolutionDir)Samba.Presentation\bin\$(ConfigurationName)\"
+xcopy /Y /I "$(TargetPath)" "$(SolutionDir)Samba.Presentation\bin\$(ConfigurationName)\"
+
 
 
 :End</PostBuildEvent>
