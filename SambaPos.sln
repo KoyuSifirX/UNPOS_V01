@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36623.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samba.Presentation", "Samba.Presentation\Samba.Presentation.csproj", "{B58CBF09-52EA-4466-B5D2-2664018E7561}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6B09228C-C411-4E88-A8FE-A2E2C4D513F7} = {6B09228C-C411-4E88-A8FE-A2E2C4D513F7}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation Layer", "1. Presentation Layer", "{EBD09D7D-66B5-4DA4-ABB3-3F511769CF7D}"
 EndProject
@@ -134,6 +137,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastButton", "Lib\FastButton\FastButton.csproj", "{7519CB8C-3C25-4F74-8946-93ECB7450C31}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samba.Modules.FastpayModule", "Samba.Modules.FastPay\Samba.Modules.FastpayModule.csproj", "{6B09228C-C411-4E88-A8FE-A2E2C4D513F7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{04ED7BE0-8768-4A8D-B1ED-C92CB60789EF} = {04ED7BE0-8768-4A8D-B1ED-C92CB60789EF}
+		{434D497A-D439-44C8-84A5-5301B572708F} = {434D497A-D439-44C8-84A5-5301B572708F}
+		{512FD53F-9AD1-46A1-A961-9FABDFAD50C5} = {512FD53F-9AD1-46A1-A961-9FABDFAD50C5}
+		{7519CB8C-3C25-4F74-8946-93ECB7450C31} = {7519CB8C-3C25-4F74-8946-93ECB7450C31}
+		{B184E8F8-A507-4C3D-B580-184E3776A95C} = {B184E8F8-A507-4C3D-B580-184E3776A95C}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
