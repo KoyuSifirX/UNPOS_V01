@@ -36,7 +36,11 @@ namespace Samba.Modules.FastPayModule
                 string.Format(Resources.CanNavigate_f, Resources.FastPay));
         }
 
-
+        public void ExecuteFastPay()
+        {
+            EventServiceFactory.EventService.PublishEvent(EventTopicNames.CreateTicket);
+            EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivatePosView);
+        }
         protected override void OnInitialization()
         {
             _regionManager.RegisterViewWithRegion(RegionNames.MainRegion, typeof(FastPayModuleView));
@@ -50,6 +54,7 @@ namespace Samba.Modules.FastPayModule
         protected override void OnNavigate(string obj)
         {
             base.OnNavigate(obj);
+            ExecuteFastPay();
 
         }
 

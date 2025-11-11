@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B75C6387-9855-44BF-886E-5BB60D643AD2}|Samba.Modules.PosModule\\Samba.Modules.PosModule.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.modules.posmodule\\ticketview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B75C6387-9855-44BF-886E-5BB60D643AD2}|Samba.Modules.PosModule\\Samba.Modules.PosModule.csproj|solutionrelative:samba.modules.posmodule\\ticketview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B75C6387-9855-44BF-886E-5BB60D643AD2}|Samba.Modules.PosModule\\Samba.Modules.PosModule.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.modules.posmodule\\posmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B75C6387-9855-44BF-886E-5BB60D643AD2}|Samba.Modules.PosModule\\Samba.Modules.PosModule.csproj|solutionrelative:samba.modules.posmodule\\posmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B75C6387-9855-44BF-886E-5BB60D643AD2}|Samba.Modules.PosModule\\Samba.Modules.PosModule.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.modules.posmodule\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B75C6387-9855-44BF-886E-5BB60D643AD2}|Samba.Modules.PosModule\\Samba.Modules.PosModule.csproj|solutionrelative:samba.modules.posmodule\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6B09228C-C411-4E88-A8FE-A2E2C4D513F7}|Samba.Modules.FastPay\\Samba.Modules.FastpayModule.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.modules.fastpay\\fastpaymoduleview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B09228C-C411-4E88-A8FE-A2E2C4D513F7}|Samba.Modules.FastPay\\Samba.Modules.FastpayModule.csproj|solutionrelative:samba.modules.fastpay\\fastpaymoduleview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B09228C-C411-4E88-A8FE-A2E2C4D513F7}|Samba.Modules.FastPay\\Samba.Modules.FastpayModule.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.modules.fastpay\\fastpaymoduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B09228C-C411-4E88-A8FE-A2E2C4D513F7}|Samba.Modules.FastPay\\Samba.Modules.FastpayModule.csproj|solutionrelative:samba.modules.fastpay\\fastpaymoduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6B09228C-C411-4E88-A8FE-A2E2C4D513F7}|Samba.Modules.FastPay\\Samba.Modules.FastpayModule.csproj|C:\\Users\\Admin\\Desktop\\UNPOS_V01\\samba.modules.fastpay\\fastpaymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B09228C-C411-4E88-A8FE-A2E2C4D513F7}|Samba.Modules.FastPay\\Samba.Modules.FastpayModule.csproj|solutionrelative:samba.modules.fastpay\\fastpaymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F30AA5E9-0C10-438D-9DC7-5A8F3FC5D95D}|Samba.Modules.PaymentModule\\Samba.Modules.PaymentModule.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.modules.paymentmodule\\paymenteditorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F30AA5E9-0C10-438D-9DC7-5A8F3FC5D95D}|Samba.Modules.PaymentModule\\Samba.Modules.PaymentModule.csproj|solutionrelative:samba.modules.paymentmodule\\paymenteditorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F30AA5E9-0C10-438D-9DC7-5A8F3FC5D95D}|Samba.Modules.PaymentModule\\Samba.Modules.PaymentModule.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.modules.paymentmodule\\paymenteditorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F30AA5E9-0C10-438D-9DC7-5A8F3FC5D95D}|Samba.Modules.PaymentModule\\Samba.Modules.PaymentModule.csproj|solutionrelative:samba.modules.paymentmodule\\paymenteditorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B09228C-C411-4E88-A8FE-A2E2C4D513F7}|Samba.Modules.FastPay\\Samba.Modules.FastpayModule.csproj|c:\\users\\admin\\desktop\\unpos_v01\\samba.modules.fastpay\\fastpaymoduleview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B09228C-C411-4E88-A8FE-A2E2C4D513F7}|Samba.Modules.FastPay\\Samba.Modules.FastpayModule.csproj|solutionrelative:samba.modules.fastpay\\fastpaymoduleview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B09228C-C411-4E88-A8FE-A2E2C4D513F7}|Samba.Modules.FastPay\\Samba.Modules.FastpayModule.csproj|C:\\Users\\Admin\\Desktop\\UNPOS_V01\\samba.modules.fastpay\\fastpaymoduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B09228C-C411-4E88-A8FE-A2E2C4D513F7}|Samba.Modules.FastPay\\Samba.Modules.FastpayModule.csproj|solutionrelative:samba.modules.fastpay\\fastpaymoduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,81 +34,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TicketView.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PosModule\\TicketView.xaml",
-              "RelativeDocumentMoniker": "Samba.Modules.PosModule\\TicketView.xaml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PosModule\\TicketView.xaml",
-              "RelativeToolTip": "Samba.Modules.PosModule\\TicketView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-11T06:43:17.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PosModule.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PosModule\\PosModule.cs",
-              "RelativeDocumentMoniker": "Samba.Modules.PosModule\\PosModule.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PosModule\\PosModule.cs",
-              "RelativeToolTip": "Samba.Modules.PosModule\\PosModule.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAswFkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T06:35:08.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "OrderViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PosModule\\OrderViewModel.cs",
-              "RelativeDocumentMoniker": "Samba.Modules.PosModule\\OrderViewModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PosModule\\OrderViewModel.cs",
-              "RelativeToolTip": "Samba.Modules.PosModule\\OrderViewModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
+              "Title": "PaymentEditorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PaymentModule\\PaymentEditorViewModel.cs",
+              "RelativeDocumentMoniker": "Samba.Modules.PaymentModule\\PaymentEditorViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PaymentModule\\PaymentEditorViewModel.cs",
+              "RelativeToolTip": "Samba.Modules.PaymentModule\\PaymentEditorViewModel.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAuwEEAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T06:35:09.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FastPayModuleView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.FastPay\\FastPayModuleView.xaml.cs",
-              "RelativeDocumentMoniker": "Samba.Modules.FastPay\\FastPayModuleView.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.FastPay\\FastPayModuleView.xaml.cs",
-              "RelativeToolTip": "Samba.Modules.FastPay\\FastPayModuleView.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T06:26:03.815Z",
+              "WhenOpened": "2025-11-11T09:24:28.217Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "FastPayModuleView.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.FastPay\\FastPayModuleView.xaml",
+              "RelativeDocumentMoniker": "Samba.Modules.FastPay\\FastPayModuleView.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.FastPay\\FastPayModuleView.xaml",
+              "RelativeToolTip": "Samba.Modules.FastPay\\FastPayModuleView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-11T09:01:41.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FastPayModuleView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.FastPay\\FastPayModuleView.xaml.cs",
+              "RelativeDocumentMoniker": "Samba.Modules.FastPay\\FastPayModuleView.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.FastPay\\FastPayModuleView.xaml.cs",
+              "RelativeToolTip": "Samba.Modules.FastPay\\FastPayModuleView.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBYAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T08:57:29.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentEditorView.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PaymentModule\\PaymentEditorView.xaml",
+              "RelativeDocumentMoniker": "Samba.Modules.PaymentModule\\PaymentEditorView.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.PaymentModule\\PaymentEditorView.xaml",
+              "RelativeToolTip": "Samba.Modules.PaymentModule\\PaymentEditorView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-11T09:24:26.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FastPayModuleViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.FastPay\\FastPayModuleViewModel.cs",
               "RelativeDocumentMoniker": "Samba.Modules.FastPay\\FastPayModuleViewModel.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.FastPay\\FastPayModuleViewModel.cs",
               "RelativeToolTip": "Samba.Modules.FastPay\\FastPayModuleViewModel.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA1wBYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T06:25:46.296Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "FastPayModule.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.FastPay\\FastPayModule.cs",
               "RelativeDocumentMoniker": "Samba.Modules.FastPay\\FastPayModule.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.FastPay\\FastPayModule.cs",
               "RelativeToolTip": "Samba.Modules.FastPay\\FastPayModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwCgAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T12:49:23.98Z",
               "EditorCaption": ""
