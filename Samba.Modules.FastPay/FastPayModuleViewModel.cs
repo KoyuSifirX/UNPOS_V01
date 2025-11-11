@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.Composition;
-using Samba.Domain.Models.Menus;
+﻿using Microsoft.Practices.Prism.Commands;
 using Samba.Presentation.Common;
-using Samba.Services;
+using System.ComponentModel.Composition;
+using System.Windows.Input;
 
 namespace Samba.Modules.FastPayModule
 {
@@ -12,8 +11,21 @@ namespace Samba.Modules.FastPayModule
         private string _activeUrl;
         public string ActiveUrl
         {
-            get { return _activeUrl; }
+            get => _activeUrl;
             set { _activeUrl = value; RaisePropertyChanged(() => ActiveUrl); }
+        }
+
+        public ICommand FastPayCommand { get; private set; }
+
+        [ImportingConstructor]
+        public FastPayModuleViewModel()
+        {
+            FastPayCommand = new DelegateCommand(OnFastPayExecuted);
+        }
+
+        private void OnFastPayExecuted()
+        {
+            ActiveUrl = "https://www.fastpay.com.tr/"; // test amacıyla
         }
     }
 }

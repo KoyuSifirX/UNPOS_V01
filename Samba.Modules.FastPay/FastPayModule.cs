@@ -1,7 +1,8 @@
-﻿using Microsoft.Practices.Prism.MefExtensions.Modularity;
+﻿using Microsoft.Practices.Prism.Events;
+using Microsoft.Practices.Prism.MefExtensions.Modularity;
 using Microsoft.Practices.Prism.Regions;
+using Samba.Domain.Models.Tickets;
 using Samba.Localization.Properties;
-using Samba.Modules.FastPayModule;
 using Samba.Presentation.Common;
 using Samba.Presentation.Services;
 using Samba.Presentation.Services.Common;
@@ -14,21 +15,27 @@ namespace Samba.Modules.FastPayModule
     {
         private readonly IRegionManager _regionManager;
         private readonly IUserService _userService;
-        private readonly FastPayModuleView _FastPayModuleView;
-        private readonly FastPayModuleViewModel _FastPayModuleViewModel;
+        private readonly FastPayModuleView _fastPayModuleView;
+        private readonly FastPayModuleViewModel _fastPayModuleViewModel;
+
 
         [ImportingConstructor]
-        public FastPayModule(IRegionManager regionManager, IUserService userService, FastPayModuleView FastPayModuleView, FastPayModuleViewModel FastPayModuleViewModel)
+        public FastPayModule(IRegionManager regionManager, IUserService userService,
+            FastPayModuleView fastPayModuleView, FastPayModuleViewModel fastPayModuleViewModel)
             : base(regionManager, AppScreens.FastPayView)
         {
             _regionManager = regionManager;
             _userService = userService;
-            _FastPayModuleView = FastPayModuleView;
-            _FastPayModuleViewModel = FastPayModuleViewModel;
+            _fastPayModuleView = fastPayModuleView;
+            _fastPayModuleViewModel = fastPayModuleViewModel;
 
             SetNavigationCommand(Resources.FastPay, Resources.Common, "Images/dcn.png", 50);
-            PermissionRegistry.RegisterPermission(PermissionNames.OpenFastPay, PermissionCategories.Navigation, string.Format(Resources.CanNavigate_f, Resources.FastPay));
+            PermissionRegistry.RegisterPermission(
+                PermissionNames.OpenFastPay,
+                PermissionCategories.Navigation,
+                string.Format(Resources.CanNavigate_f, Resources.FastPay));
         }
+
 
         protected override void OnInitialization()
         {
@@ -43,13 +50,12 @@ namespace Samba.Modules.FastPayModule
         protected override void OnNavigate(string obj)
         {
             base.OnNavigate(obj);
-            _FastPayModuleViewModel.ActiveUrl = "about:blank";
-            _FastPayModuleViewModel.ActiveUrl = "http://www.sambamarket.com/";
+
         }
 
         public override object GetVisibleView()
         {
-            return _FastPayModuleView;
+            return _fastPayModuleView;
         }
     }
 }
