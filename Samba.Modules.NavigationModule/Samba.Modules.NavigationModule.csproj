@@ -141,6 +141,19 @@
     <Resource Include="Images\dcn.png" />
     <Resource Include="Images\note.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hizli_satis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\adisyonlar.png" />
+    <Resource Include="Images\cikis.png" />
+    <Resource Include="Images\depo.png" />
+    <Resource Include="Images\gun_islemleri.png" />
+    <Resource Include="Images\hesaplar.png" />
+    <Resource Include="Images\pos.png" />
+    <Resource Include="Images\raporlar.png" />
+    <Resource Include="Images\yonetim.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>IF NOT "$(ConfigurationName)"=="Release" GOTO End
