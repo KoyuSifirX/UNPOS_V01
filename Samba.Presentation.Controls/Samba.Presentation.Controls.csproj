@@ -285,7 +285,10 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\logo.png" />
+    <Resource Include="Images\unposbilisim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\unpos_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

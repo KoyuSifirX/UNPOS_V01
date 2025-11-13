@@ -23,7 +23,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Foreground="White" FontWeight="Bold" Margin="5,3,0,3" FontSize="15">Samba Keyboard</TextBlock>
+                    <TextBlock Foreground="White" FontWeight="Bold" Margin="5,3,0,3" FontSize="15">Ünpos Keyboard</TextBlock>
                     <Button Grid.Column="1" FontWeight="Bold" Width="50" Margin="3" Click="Button_Click_1">▄</Button>
                     <Button Grid.Column="2" FontWeight="Bold" Width="50" Margin="3" Click="Button_Click">X</Button>
                 </Grid>

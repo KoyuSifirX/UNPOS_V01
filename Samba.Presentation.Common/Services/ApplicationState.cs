@@ -121,12 +121,6 @@ namespace Samba.Presentation.Common.Services
             CurrentLoggedInUser = user;
             SetLocalSetting("CURRENTUSER", user.Name);
         }
-        public void SetFastPayTicket(Ticket ticket, bool isFastPay)
-        {
-            if (ticket != null)
-                ticket.IsFastPay = isFastPay;
-        }
-
         public void SetCurrentDepartment(Department department)
         {
             if (department == null) return;

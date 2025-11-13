@@ -34,7 +34,7 @@ namespace Samba.Modules.FastPayModule
             _fastPayModuleViewModel = fastPayModuleViewModel;
             _applicationState = applicationState;
 
-            SetNavigationCommand(Resources.FastPay, Resources.Common, "Images/hizli_satis.png", 50);
+            SetNavigationCommand(Resources.FastPay, Resources.Common, "Images/sepet512.png", 50);
             PermissionRegistry.RegisterPermission(
                 PermissionNames.OpenFastPay,
                 PermissionCategories.Navigation,

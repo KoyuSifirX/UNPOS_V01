@@ -224,7 +224,6 @@ namespace Samba.Modules.PosModule
                         
 
                         OpenTicket(0);
-                        _applicationStateSetter.SetFastPayTicket(SelectedTicket, true);
 
                         _ticketService.UpdateEntity(SelectedTicket, eventParameters.Value.SelectedItem);
                     }
@@ -237,7 +236,6 @@ namespace Samba.Modules.PosModule
                     }
                     else
                     {
-                        _applicationStateSetter.SetFastPayTicket(SelectedTicket, true);
                         OpenTicket(openTickets.ElementAt(0));
                     }
                     EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivatePosView);
@@ -309,9 +307,7 @@ namespace Samba.Modules.PosModule
                         x => x.CopyToNewTickets && x.EntityTypeId == ticketEntity.EntityTypeId))
                 {
                     var entity = _cacheService.GetEntityById(ticketEntity.EntityId);
-                    if (entity == null) _applicationStateSetter.SetFastPayTicket(SelectedTicket, true);
-                    else;
-                        _ticketService.UpdateEntity(SelectedTicket, entity, ticketEntity.AccountTypeId, ticketEntity.AccountId, ticketEntity.EntityCustomData);
+                   _ticketService.UpdateEntity(SelectedTicket, entity, ticketEntity.AccountTypeId, ticketEntity.AccountId, ticketEntity.EntityCustomData);
                 }
             }
         }
@@ -489,7 +485,6 @@ namespace Samba.Modules.PosModule
             {
                 InteractionService.UserIntraction.GiveFeedback(result.ErrorMessage);
             }
-            var isFastPay = SelectedTicket?.IsFastPay ?? false;
 
             SelectedTicket = null;
 

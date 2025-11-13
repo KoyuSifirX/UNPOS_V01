@@ -101,18 +101,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Ppt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Network.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Tools.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Run.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\background.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -134,11 +122,6 @@
     <Resource Include="Images\Png.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Xls.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\box.png" />
-    <Resource Include="Images\dcn.png" />
     <Resource Include="Images\note.png" />
   </ItemGroup>
   <ItemGroup>
@@ -146,13 +129,25 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\adisyonlar.png" />
-    <Resource Include="Images\cikis.png" />
-    <Resource Include="Images\depo.png" />
     <Resource Include="Images\gun_islemleri.png" />
     <Resource Include="Images\hesaplar.png" />
     <Resource Include="Images\pos.png" />
     <Resource Include="Images\raporlar.png" />
     <Resource Include="Images\yonetim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ayarlar512.png" />
+    <Resource Include="Images\masa512.png" />
+    <Resource Include="Images\rapor512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sepet512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cikis512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\depo512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
