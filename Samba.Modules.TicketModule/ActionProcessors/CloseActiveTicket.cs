@@ -6,6 +6,14 @@ using Samba.Presentation.Services;
 using Samba.Presentation.Services.Common;
 using Samba.Services.Common;
 
+/* CloseActiveTicket
+ * It is the action process of the closeTicketAction inside of the RuleGenerator.cs
+ * Attempts to close the active ticket if possible.
+ * The ticket cannot be closed if there are mandatory order tags that have not been selected.
+ * Calls to CloseTicketRequested event to initiate the ticket closing process.
+ * 
+ */
+
 namespace Samba.Modules.TicketModule.ActionProcessors
 {
     [Export(typeof(IActionType))]

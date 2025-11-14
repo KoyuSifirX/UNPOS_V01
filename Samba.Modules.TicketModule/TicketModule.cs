@@ -8,6 +8,14 @@ using Samba.Presentation.Common.ModelBase;
 using Samba.Presentation.Services;
 using Samba.Presentation.Services.Common;
 
+/* TicketModule
+ * The TicketModule class is a module in the Samba POS system that manages ticket-related functionalities.
+ * It inherits from VisibleModuleBase and is exported as a MEF module.
+ * Handles navigation, permissions, and view registration for ticket management.
+ * Is being used to manage tickets, ticket types, tags, payment types, and calculation types.
+ * 
+ */
+
 namespace Samba.Modules.TicketModule
 {
     [ModuleExport(typeof(TicketModule))]

@@ -18,6 +18,14 @@ using Samba.Presentation.ViewModels;
 using Samba.Services;
 using Samba.Services.Common;
 
+
+/* PosViewModel
+ * Handles the main POS view model in the Samba POS system.
+ * Has entities for ticket management, menu item selection, and ticket orders.
+ * When an entity is selected, it checks for existing tickets and opens or creates tickets as needed.
+ * An entity can also be assigned to a customer within the ticket.
+ */
+
 namespace Samba.Modules.PosModule
 {
     [Export]

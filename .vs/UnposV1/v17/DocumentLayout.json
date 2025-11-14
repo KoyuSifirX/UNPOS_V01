@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{6B09228C-C411-4E88-A8FE-A2E2C4D513F7}|Samba.Modules.FastPay\\Samba.Modules.FastpayModule.csproj|solutionrelative:samba.modules.fastpay\\fastpaymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534CEC53-1EBC-4386-95E3-0E451FCB388A}|Samba.Modules.LoginModule\\Samba.Modules.LoginModule.csproj|C:\\Users\\Admin\\Desktop\\UNPOS_V01\\samba.modules.loginmodule\\loginmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{534CEC53-1EBC-4386-95E3-0E451FCB388A}|Samba.Modules.LoginModule\\Samba.Modules.LoginModule.csproj|solutionrelative:samba.modules.loginmodule\\loginmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DD8848C-3ADB-45B3-BD49-10AF3AEE2521}|Samba.Presentation.Services\\Samba.Presentation.Services.csproj|C:\\Users\\Admin\\Desktop\\UNPOS_V01\\samba.presentation.services\\common\\datageneration\\rulegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD8848C-3ADB-45B3-BD49-10AF3AEE2521}|Samba.Presentation.Services\\Samba.Presentation.Services.csproj|solutionrelative:samba.presentation.services\\common\\datageneration\\rulegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDEF0022-075C-4DEC-853F-6558F9E8438A}|Samba.Modules.AccountModule\\Samba.Modules.AccountModule.csproj|C:\\Users\\Admin\\Desktop\\UNPOS_V01\\samba.modules.accountmodule\\accountmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDEF0022-075C-4DEC-853F-6558F9E8438A}|Samba.Modules.AccountModule\\Samba.Modules.AccountModule.csproj|solutionrelative:samba.modules.accountmodule\\accountmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AE61C89-EBFD-498D-9F53-6319B302CDBF}|Samba.Modules.UserModule\\Samba.Modules.UserModule.csproj|C:\\Users\\Admin\\Desktop\\UNPOS_V01\\samba.modules.usermodule\\loggedinuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AE61C89-EBFD-498D-9F53-6319B302CDBF}|Samba.Modules.UserModule\\Samba.Modules.UserModule.csproj|solutionrelative:samba.modules.usermodule\\loggedinuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E93B6838-9B18-4718-AB7B-2EA5232518C3}|Samba.Modules.InventoryModule\\Samba.Modules.InventoryModule.csproj|C:\\Users\\Admin\\Desktop\\UNPOS_V01\\samba.modules.inventorymodule\\inventorymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E93B6838-9B18-4718-AB7B-2EA5232518C3}|Samba.Modules.InventoryModule\\Samba.Modules.InventoryModule.csproj|solutionrelative:samba.modules.inventorymodule\\inventorymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CDFA1B2-F3A3-45E1-919B-9D1BCA26984B}|Lib\\FluentScript\\FluentScript.csproj|C:\\Users\\Admin\\Desktop\\UNPOS_V01\\lib\\fluentscript\\plugins\\parser\\execplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CDFA1B2-F3A3-45E1-919B-9D1BCA26984B}|Lib\\FluentScript\\FluentScript.csproj|solutionrelative:lib\\fluentscript\\plugins\\parser\\execplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,47 +36,48 @@
               "RelativeDocumentMoniker": "Samba.Modules.FastPay\\FastPayModule.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.FastPay\\FastPayModule.cs",
               "RelativeToolTip": "Samba.Modules.FastPay\\FastPayModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAnwE4AAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T12:49:23.98Z",
+              "WhenOpened": "2025-11-14T10:58:41.972Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginModule.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.LoginModule\\LoginModule.cs",
-              "RelativeDocumentMoniker": "Samba.Modules.LoginModule\\LoginModule.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.LoginModule\\LoginModule.cs",
-              "RelativeToolTip": "Samba.Modules.LoginModule\\LoginModule.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAewBoAAABaAAAAAAAAAA==",
+              "Title": "RuleGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Presentation.Services\\Common\\DataGeneration\\RuleGenerator.cs",
+              "RelativeDocumentMoniker": "Samba.Presentation.Services\\Common\\DataGeneration\\RuleGenerator.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Presentation.Services\\Common\\DataGeneration\\RuleGenerator.cs",
+              "RelativeToolTip": "Samba.Presentation.Services\\Common\\DataGeneration\\RuleGenerator.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAASwFkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T12:16:30.062Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountModule.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.AccountModule\\AccountModule.cs",
-              "RelativeDocumentMoniker": "Samba.Modules.AccountModule\\AccountModule.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.AccountModule\\AccountModule.cs",
-              "RelativeToolTip": "Samba.Modules.AccountModule\\AccountModule.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAewDgAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T12:12:13.17Z"
+              "WhenOpened": "2025-11-14T10:14:21.523Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "InventoryModule.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.InventoryModule\\InventoryModule.cs",
-              "RelativeDocumentMoniker": "Samba.Modules.InventoryModule\\InventoryModule.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.InventoryModule\\InventoryModule.cs",
-              "RelativeToolTip": "Samba.Modules.InventoryModule\\InventoryModule.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAIA0wDgAAAA1AAAAAAAAAA==",
+              "Title": "ExecPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Lib\\FluentScript\\Plugins\\Parser\\ExecPlugin.cs",
+              "RelativeDocumentMoniker": "Lib\\FluentScript\\Plugins\\Parser\\ExecPlugin.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Lib\\FluentScript\\Plugins\\Parser\\ExecPlugin.cs",
+              "RelativeToolTip": "Lib\\FluentScript\\Plugins\\Parser\\ExecPlugin.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAQwIIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T12:11:43.241Z"
+              "WhenOpened": "2025-11-14T13:28:36.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoggedInUserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.UserModule\\LoggedInUserViewModel.cs",
+              "RelativeDocumentMoniker": "Samba.Modules.UserModule\\LoggedInUserViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\UNPOS_V01\\Samba.Modules.UserModule\\LoggedInUserViewModel.cs",
+              "RelativeToolTip": "Samba.Modules.UserModule\\LoggedInUserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:28:00.428Z"
             }
           ]
         }
