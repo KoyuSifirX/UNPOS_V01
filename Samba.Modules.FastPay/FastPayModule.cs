@@ -27,7 +27,7 @@ namespace Samba.Modules.FastPayModule
     public class FastPayModule : VisibleModuleBase
     {
         private readonly IRegionManager _regionManager;
-        private readonly IUserService _userService;
+        private readonly IUserService _userService; 
         private readonly FastPayModuleView _fastPayModuleView;
         private readonly FastPayModuleViewModel _fastPayModuleViewModel;
         private readonly IApplicationState _applicationState;
@@ -72,6 +72,7 @@ namespace Samba.Modules.FastPayModule
 
         protected override void OnInitialization()
         {
+
             _regionManager.RegisterViewWithRegion(RegionNames.MainRegion, typeof(FastPayModuleView));
             EventServiceFactory.EventService.GetEvent<GenericEvent<EventParameters<object>>>().Subscribe(OnPaymentEvent);
             EventServiceFactory.EventService.GetEvent<GenericEvent<EventAggregator>>().Subscribe(OnEvent);
@@ -98,7 +99,7 @@ namespace Samba.Modules.FastPayModule
                 case EventTopicNames.ActivateFastPayView:
                     _regionManager.RequestNavigate(
                         RegionNames.MainRegion,
-                        new Uri("FastPayView", UriKind.Relative));
+                        new Uri(typeof(FastPayModuleView).FullName, UriKind.Relative));
                     break;
 
                 case EventTopicNames.CloseTicketRequested:
@@ -107,13 +108,22 @@ namespace Samba.Modules.FastPayModule
                     // _applicationState.IsFastPayMode = false;
                     if (_applicationState.IsPaymentDone)
                     {
+                        _applicationState.IsFastPayMode = true;
+                        _applicationState.IsPaymentDone = false; // reset for next cycle (optional here)
 
-                        _regionManager.RequestNavigate(
-                        RegionNames.MainRegion,
-                        new Uri("FastPayView", UriKind.Relative));
+                        // Create a new ticket (this triggers TicketService.Create -> TicketCreated)
+                        EventServiceFactory.EventService.PublishEvent(EventTopicNames.CreateTicket);
+
+                        // Make sure any UI state in FastPay VM is cleared. If no handler exists,
+                        // either add one or publish RefreshSelectedTicket which is already used elsewhere.
+                        // EventServiceFactory.EventService.PublishEvent(EventTopicNames.RefreshSelectedTicket);
+
+                        // Now navigate to the FastPay view (view will show newly created ticket)
+                        EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivateFastPayView);
                     }
                     else
                         {
+                        // if (EventAggregator.EventService.PublishEvent(EventTopicNames.))
                         // Unsubscribe if not in Fast Pay mode
                         EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivateNavigation);
                     }

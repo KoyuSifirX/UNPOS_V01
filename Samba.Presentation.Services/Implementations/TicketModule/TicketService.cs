@@ -215,7 +215,13 @@ namespace Samba.Presentation.Services.Implementations.TicketModule
                     RemainingAmount = ticket.GetRemainingAmount()
                 });
             if (_applicationState.IsFastPayMode)
-                _applicationState.IsPaymentDone = ticket.GetRemainingAmount() <= 0;
+            {
+                decimal current_money;
+                current_money = ticket.GetRemainingAmount();
+                if (current_money == 0) _applicationState.IsPaymentDone = true;
+            }
+                
+               
         }
 
         public void AddChangePayment(Ticket ticket, ChangePaymentType paymentType, Account account, decimal amount)

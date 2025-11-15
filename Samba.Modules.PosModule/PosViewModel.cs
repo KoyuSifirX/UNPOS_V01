@@ -510,10 +510,16 @@ namespace Samba.Modules.PosModule
                 {   
                     if (_applicationState.IsFastPayMode)
 
-                    {
-                        EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivateFastPayView);
-                        _applicationState.IsFastPayMode = false;
-                        _applicationState.IsPaymentDone = false;
+                    {   
+                        if((_applicationState.IsFastPayMode && _applicationState.IsPaymentDone))
+                        {
+                            EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivateFastPayView);
+                        }
+                        else
+                        {
+                            EventServiceFactory.EventService.PublishEvent(EventTopicNames.TicketClosed);
+                        }
+
                     }
                      else EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivatePosView);
                 }

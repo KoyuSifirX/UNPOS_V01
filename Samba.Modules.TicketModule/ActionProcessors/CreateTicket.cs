@@ -22,7 +22,6 @@ namespace Samba.Modules.TicketModule.ActionProcessors
         {
             _applicationState = applicationState;
             _ticketService = ticketService;
-            _applicationState.IsPaymentDone = false;
         }
 
         public override void Process(ActionData actionData)

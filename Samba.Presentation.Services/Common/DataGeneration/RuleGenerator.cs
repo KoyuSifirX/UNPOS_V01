@@ -87,7 +87,8 @@ namespace Samba.Presentation.Services.Common.DataGeneration
         // Checks whether the rules should be regenerated based on the presence of a specific file.
         public static bool ShouldRegenerateRules()
         {
-            return File.Exists(LocalSettings.UserPath + "\\regen.txt");
+            return true; // Always regenerate rules
+            // return File.Exists(LocalSettings.UserPath + "\\regen.txt");
         }
 
         public void RegenerateRules(IWorkspace workspace)
