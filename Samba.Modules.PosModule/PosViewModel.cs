@@ -18,6 +18,14 @@ using Samba.Presentation.ViewModels;
 using Samba.Services;
 using Samba.Services.Common;
 
+
+/* PosViewModel
+ * Handles the main POS view model in the Samba POS system.
+ * Has entities for ticket management, menu item selection, and ticket orders.
+ * When an entity is selected, it checks for existing tickets and opens or creates tickets as needed.
+ * An entity can also be assigned to a customer within the ticket.
+ */
+
 namespace Samba.Modules.PosModule
 {
     [Export]
@@ -224,7 +232,6 @@ namespace Samba.Modules.PosModule
                         
 
                         OpenTicket(0);
-                        _applicationStateSetter.SetFastPayTicket(SelectedTicket, true);
 
                         _ticketService.UpdateEntity(SelectedTicket, eventParameters.Value.SelectedItem);
                     }
@@ -237,7 +244,6 @@ namespace Samba.Modules.PosModule
                     }
                     else
                     {
-                        _applicationStateSetter.SetFastPayTicket(SelectedTicket, true);
                         OpenTicket(openTickets.ElementAt(0));
                     }
                     EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivatePosView);
@@ -309,9 +315,7 @@ namespace Samba.Modules.PosModule
                         x => x.CopyToNewTickets && x.EntityTypeId == ticketEntity.EntityTypeId))
                 {
                     var entity = _cacheService.GetEntityById(ticketEntity.EntityId);
-                    if (entity == null) _applicationStateSetter.SetFastPayTicket(SelectedTicket, true);
-                    else;
-                        _ticketService.UpdateEntity(SelectedTicket, entity, ticketEntity.AccountTypeId, ticketEntity.AccountId, ticketEntity.EntityCustomData);
+                   _ticketService.UpdateEntity(SelectedTicket, entity, ticketEntity.AccountTypeId, ticketEntity.AccountId, ticketEntity.EntityCustomData);
                 }
             }
         }
@@ -489,7 +493,6 @@ namespace Samba.Modules.PosModule
             {
                 InteractionService.UserIntraction.GiveFeedback(result.ErrorMessage);
             }
-            var isFastPay = SelectedTicket?.IsFastPay ?? false;
 
             SelectedTicket = null;
 
@@ -510,6 +513,7 @@ namespace Samba.Modules.PosModule
                     {
                         EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivateFastPayView);
                         _applicationState.IsFastPayMode = false;
+                        _applicationState.IsPaymentDone = false;
                     }
                      else EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivatePosView);
                 }

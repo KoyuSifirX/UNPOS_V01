@@ -8,6 +8,13 @@ using Samba.Infrastructure.Settings;
 using Samba.Localization.Properties;
 using Samba.Services.Common;
 
+/* RuleGenerator
+ * Contains methods to generate and manage system rules within the Samba POS application.
+ * The contents of several FlexButton companents are created, reinitialized, or deleted here.
+ * If you want to regenerate the system rules, create a file named "regen.txt" in the user path or adjust the return value to always return true. 
+ * (It doesn't cause any harm to regenerate the rules at the time, but it may take a bit longer during startup. At least it did when I did so.)
+ */
+
 namespace Samba.Presentation.Services.Common.DataGeneration
 {
     public class RuleGenerator
@@ -77,6 +84,7 @@ namespace Samba.Presentation.Services.Common.DataGeneration
             return result;
         }
 
+        // Checks whether the rules should be regenerated based on the presence of a specific file.
         public static bool ShouldRegenerateRules()
         {
             return File.Exists(LocalSettings.UserPath + "\\regen.txt");
@@ -114,6 +122,7 @@ namespace Samba.Presentation.Services.Common.DataGeneration
             DeleteEntity<AppAction>(workspace, "UpdateEntityState");
             DeleteEntity<AppAction>(workspace, "Create_f", "Ticket");
             DeleteEntity<AppAction>(workspace, "CloseTicket");
+            DeleteEntity<AppAction>(workspace, "CloseTicket");
             DeleteEntity<AppAction>(workspace, "DisplayPaymentScreen");
             DeleteEntity<AppAction>(workspace, "ExecutePrintBillJob");
             DeleteEntity<AppAction>(workspace, "ExecuteKitchenOrdersPrintJob");
@@ -142,11 +151,15 @@ namespace Samba.Presentation.Services.Common.DataGeneration
 
             DeleteEntity<AppRule>(workspace, "Rule_f", "CloseTicket");
             DeleteEntity<AppRule>(workspace, "Rule_f", "Settle");
+
         }
 
+        // Generates system rules and adds them to the provided workspace.
         public void GenerateSystemRules(IWorkspace workspace)
         {
-            var closeTicketAutomation = new AutomationCommand { Name = Resources.CloseTicket, ButtonHeader = Resources.Close, SortOrder = -1, Color = "#FFFF0000", FontSize = 40 };
+            // Otomatik butonlar burada yaratýlýyor - Kapat butonu vs.
+            // Automation commands are created here
+            var closeTicketAutomation = new AutomationCommand { Name = Resources.CloseTicket, ButtonHeader = Resources.Close, SortOrder = -1, Color = "#FF0000", FontSize = 40 };
             closeTicketAutomation.AutomationCommandMaps.Add(new AutomationCommandMap { EnabledStates = string.Format("{0},{1},{2},{3},IsClosed", Resources.New, Resources.NewOrders, Resources.Unpaid, Resources.Locked), VisibleStates = "*", DisplayUnderTicket = true });
             workspace.Add(closeTicketAutomation);
 

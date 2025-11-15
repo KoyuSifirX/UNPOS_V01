@@ -17,10 +17,5 @@ namespace Samba.Presentation.Services
         void SetCurrentTicketType(TicketType ticketType);
         void SetCurrentTerminal(string terminalName);
         void ResetWorkPeriods();
-
-
-        // Fast Pay için eklendi, bunu kullanarak bilet üzerinde Fast Pay durumunu ayarlayabilirsiniz.
-        void SetFastPayTicket(Ticket ticket, bool isFastPay);
-
     }
 }

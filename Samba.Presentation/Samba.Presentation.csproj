@@ -355,12 +355,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="apple.ico" />
     <Resource Include="Images\MyIcon.png" />
+    <Resource Include="apple.ico" />
     <Content Include="Images\empty.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Resource Include="Images\apple-icon.png" />
+    <Resource Include="Images\unposbilisim.png" />
     <Content Include="Imports\menu.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

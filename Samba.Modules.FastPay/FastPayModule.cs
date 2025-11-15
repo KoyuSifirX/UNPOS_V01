@@ -1,14 +1,25 @@
 ﻿using Microsoft.Practices.Prism.Events;
 using Microsoft.Practices.Prism.MefExtensions.Modularity;
 using Microsoft.Practices.Prism.Regions;
-using Samba.Domain.Models.Tickets;
 using Samba.Localization.Properties;
 using Samba.Presentation.Common;
-using Samba.Presentation.Common.Services;
 using Samba.Presentation.Services;
 using Samba.Presentation.Services.Common;
+using Samba.Services.Common;
 using System;
 using System.ComponentModel.Composition;
+
+/* FastPayModule
+ * Implements a Fast Pay module for the Samba POS system.
+ * Ignores POS operations and provides a quick payment interface.
+ * Has its own view and view model for handling, based off from ActivePostView. - ActivateFastPayView
+ * Has a flag in ApplicationState to indicate Fast Pay mode.
+ * The flag is set when navigating to the Fast Pay view and used to modify behavior elsewhere in the application.
+ * FastPayMode is set to true when the Fast Pay view is activated and set to false when the ticket is closed or the user navigates away.
+ * 
+ */
+
+
 
 namespace Samba.Modules.FastPayModule
 {
@@ -34,7 +45,7 @@ namespace Samba.Modules.FastPayModule
             _fastPayModuleViewModel = fastPayModuleViewModel;
             _applicationState = applicationState;
 
-            SetNavigationCommand(Resources.FastPay, Resources.Common, "Images/hizli_satis.png", 50);
+            SetNavigationCommand(Resources.FastPay, Resources.Common, "Images/sepet512.png", 50);
             PermissionRegistry.RegisterPermission(
                 PermissionNames.OpenFastPay,
                 PermissionCategories.Navigation,
@@ -43,15 +54,27 @@ namespace Samba.Modules.FastPayModule
 
         public void ExecuteFastPay()
         {
+            _applicationState.IsPaymentDone = false;
             _applicationState.IsFastPayMode = true;
             EventServiceFactory.EventService.PublishEvent(EventTopicNames.CreateTicket);
-            EventServiceFactory.EventService.GetEvent<GenericEvent<EventAggregator>>().Subscribe(OnEvent);
+
 
 
         }
+
+        private void OnPaymentEvent(EventParameters<EventParameters<object>> obj)
+        {
+            if (obj.Topic == RuleEventNames.PaymentProcessed)
+            {
+                _applicationState.IsPaymentDone = true;
+            }
+        }
+
         protected override void OnInitialization()
         {
             _regionManager.RegisterViewWithRegion(RegionNames.MainRegion, typeof(FastPayModuleView));
+            EventServiceFactory.EventService.GetEvent<GenericEvent<EventParameters<object>>>().Subscribe(OnPaymentEvent);
+            EventServiceFactory.EventService.GetEvent<GenericEvent<EventAggregator>>().Subscribe(OnEvent);
         }
 
         protected override bool CanNavigate(string arg)
@@ -65,14 +88,42 @@ namespace Samba.Modules.FastPayModule
             ExecuteFastPay();
 
         }
+        // Event handler for various events related to Fast Pay functionality.
+        // If the ActivateFastPayView event is received, it navigates to the Fast Pay view.
+        // If the CloseTicketRequested event is received, it exits Fast Pay mode and activates navigation.
         private void OnEvent(EventParameters<EventAggregator> obj)
         {
-            if (obj.Topic == EventTopicNames.ActivateFastPayView)
+            switch (obj.Topic)
             {
-                // navigate to FastPay screen
-                _regionManager.RequestNavigate(RegionNames.MainRegion, new Uri("FastPayView", UriKind.Relative));
+                case EventTopicNames.ActivateFastPayView:
+                    _regionManager.RequestNavigate(
+                        RegionNames.MainRegion,
+                        new Uri("FastPayView", UriKind.Relative));
+                    break;
+
+                case EventTopicNames.CloseTicketRequested:
+                    // DO NOT redirect here.
+                    // Let the TicketModule actually close the ticket.
+                    // _applicationState.IsFastPayMode = false;
+                    if (_applicationState.IsPaymentDone)
+                    {
+
+                        _regionManager.RequestNavigate(
+                        RegionNames.MainRegion,
+                        new Uri("FastPayView", UriKind.Relative));
+                    }
+                    else
+                        {
+                        // Unsubscribe if not in Fast Pay mode
+                        EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivateNavigation);
+                    }
+                        break;
+
+              
+
             }
         }
+
         public override object GetVisibleView()
         {
             return _fastPayModuleView;

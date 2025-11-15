@@ -5670,6 +5670,7 @@ namespace Samba.Localization.Properties {
         public static string PaymentProcessed {
             get {
                 return ResourceManager.GetString("PaymentProcessed", resourceCulture);
+
             }
         }
         
