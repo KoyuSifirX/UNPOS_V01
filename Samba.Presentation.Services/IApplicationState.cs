@@ -27,6 +27,10 @@ namespace Samba.Presentation.Services
         // FastPay related properties
         bool IsFastPayMode { get; set; }
 
+        bool IsPaymentDone { get; set; }
+
+
+
         // General properties
         Dispatcher MainDispatcher { get; set; }
         AppScreens ActiveAppScreen { get; }
