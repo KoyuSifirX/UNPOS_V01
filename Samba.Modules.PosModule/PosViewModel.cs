@@ -197,6 +197,8 @@ namespace Samba.Modules.PosModule
         {
             if (eventParameters.Topic == EventTopicNames.EntitySelected)
             {
+                // Reset Fast Pay Mode on new entity selection
+                _applicationState.IsFastPayMode = false;
                 FireEntitySelectedRule(eventParameters.Value.SelectedItem);
                 if (SelectedTicket != null)
                 {
