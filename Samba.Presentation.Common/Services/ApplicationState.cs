@@ -46,6 +46,13 @@ namespace Samba.Presentation.Common.Services
             _isLandscape = true;
         }
 
+
+        // FastPay related properties
+        public bool IsFastPayMode { get; set; } = false;
+
+        public bool IsPaymentDone { get; set; } = false;
+
+        // General properties
         public Dispatcher MainDispatcher { get; set; }
         public AppScreens ActiveAppScreen { get; private set; }
         public CurrentDepartmentData CurrentDepartment { get; private set; }
@@ -55,6 +62,7 @@ namespace Samba.Presentation.Common.Services
         public EntityScreen TempEntityScreen { get; set; }
 
         private bool _isLocked;
+
         public bool IsLocked
         {
             get { return _isLocked; }
@@ -115,7 +123,6 @@ namespace Samba.Presentation.Common.Services
             CurrentLoggedInUser = user;
             SetLocalSetting("CURRENTUSER", user.Name);
         }
-
         public void SetCurrentDepartment(Department department)
         {
             if (department == null) return;

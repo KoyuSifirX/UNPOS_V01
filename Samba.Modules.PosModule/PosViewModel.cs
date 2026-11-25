@@ -18,6 +18,14 @@ using Samba.Presentation.ViewModels;
 using Samba.Services;
 using Samba.Services.Common;
 
+
+/* PosViewModel
+ * Handles the main POS view model in the Samba POS system.
+ * Has entities for ticket management, menu item selection, and ticket orders.
+ * When an entity is selected, it checks for existing tickets and opens or creates tickets as needed.
+ * An entity can also be assigned to a customer within the ticket.
+ */
+
 namespace Samba.Modules.PosModule
 {
     [Export]
@@ -40,6 +48,7 @@ namespace Samba.Modules.PosModule
         private readonly MenuItemSelectorView _menuItemSelectorView;
         private readonly TicketViewModel _ticketViewModel;
         private readonly TicketOrdersViewModel _ticketOrdersViewModel;
+
 
         private Entity _lastSelectedEntity;
         protected Action ExpectedAction { get; set; }
@@ -188,6 +197,8 @@ namespace Samba.Modules.PosModule
         {
             if (eventParameters.Topic == EventTopicNames.EntitySelected)
             {
+                // Reset Fast Pay Mode on new entity selection
+                _applicationState.IsFastPayMode = false;
                 FireEntitySelectedRule(eventParameters.Value.SelectedItem);
                 if (SelectedTicket != null)
                 {
@@ -220,8 +231,10 @@ namespace Samba.Modules.PosModule
                             _applicationStateSetter.SetCurrentTicketType(_applicationState.TempTicketType);
                             _applicationState.TempTicketType = null;
                         }
+                        
 
                         OpenTicket(0);
+
                         _ticketService.UpdateEntity(SelectedTicket, eventParameters.Value.SelectedItem);
                     }
                     else if (openTickets.Count > 1)
@@ -304,7 +317,7 @@ namespace Samba.Modules.PosModule
                         x => x.CopyToNewTickets && x.EntityTypeId == ticketEntity.EntityTypeId))
                 {
                     var entity = _cacheService.GetEntityById(ticketEntity.EntityId);
-                    _ticketService.UpdateEntity(SelectedTicket, entity, ticketEntity.AccountTypeId, ticketEntity.AccountId, ticketEntity.EntityCustomData);
+                   _ticketService.UpdateEntity(SelectedTicket, entity, ticketEntity.AccountTypeId, ticketEntity.AccountId, ticketEntity.EntityCustomData);
                 }
             }
         }
@@ -495,7 +508,23 @@ namespace Samba.Modules.PosModule
                 {
                     ExpectedAction.Invoke();
                 }
-                else EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivatePosView);
+                else
+                {   
+                    if (_applicationState.IsFastPayMode)
+
+                    {   
+                        if((_applicationState.IsFastPayMode && _applicationState.IsPaymentDone))
+                        {
+                            EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivateFastPayView);
+                        }
+                        else
+                        {
+                            EventServiceFactory.EventService.PublishEvent(EventTopicNames.TicketClosed);
+                        }
+
+                    }
+                     else EventServiceFactory.EventService.PublishEvent(EventTopicNames.ActivatePosView);
+                }
             }
             ExpectedAction = null;
             _messagingService.SendMessage(Messages.TicketRefreshMessage, result.TicketId.ToString(CultureInfo.InvariantCulture));

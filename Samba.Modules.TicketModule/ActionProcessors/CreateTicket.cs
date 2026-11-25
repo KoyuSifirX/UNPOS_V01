@@ -16,6 +16,7 @@ namespace Samba.Modules.TicketModule.ActionProcessors
         private readonly IApplicationState _applicationState;
         private readonly ITicketService _ticketService;
 
+
         [ImportingConstructor]
         public CreateTicket(IApplicationState applicationState, ITicketService ticketService)
         {

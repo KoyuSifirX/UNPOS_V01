@@ -3326,6 +3326,16 @@ namespace Samba.Localization.Properties {
             }
         }
         
+
+        /// <summary>
+        ///   FastPay benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        public static string FastPay {
+            get {
+                return ResourceManager.GetString("FastPay", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Field Type benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
@@ -4481,15 +4491,6 @@ namespace Samba.Localization.Properties {
         public static string Mappings {
             get {
                 return ResourceManager.GetString("Mappings", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Market benzeri yerelleştirilmiş bir dize arar.
-        /// </summary>
-        public static string Market {
-            get {
-                return ResourceManager.GetString("Market", resourceCulture);
             }
         }
         
@@ -5669,6 +5670,7 @@ namespace Samba.Localization.Properties {
         public static string PaymentProcessed {
             get {
                 return ResourceManager.GetString("PaymentProcessed", resourceCulture);
+
             }
         }
         
@@ -6743,15 +6745,6 @@ namespace Samba.Localization.Properties {
         public static string SalesIncome {
             get {
                 return ResourceManager.GetString("SalesIncome", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Samba Market benzeri yerelleştirilmiş bir dize arar.
-        /// </summary>
-        public static string SambaMarket {
-            get {
-                return ResourceManager.GetString("SambaMarket", resourceCulture);
             }
         }
         
@@ -8371,8 +8364,7 @@ namespace Samba.Localization.Properties {
         ///&lt;J00&gt;- {QUANTITY} {NAME}|{PRICE}
         ///{ORDER TAGS}
         /// 
-        ///[ORDERS:Gift]
-        ///-- Format for gif [dizenin kalan bölümü kesildi]&quot;; benzeri yerelleştirilmiş bir dize arar.
+        ///[ [dizenin kalan bölümü kesildi]&quot;; benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string TicketTemplateValue {
             get {

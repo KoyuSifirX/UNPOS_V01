@@ -24,6 +24,7 @@ namespace Samba.Modules.PaymentModule.ActionProcessors
 
         public override void Process(ActionData actionData)
         {
+            
             var ticket = actionData.GetDataValue<Ticket>("Ticket");
             if (ticket != null && ticket != Ticket.Empty && _ticketService.CanSettleTicket(ticket))
             {
